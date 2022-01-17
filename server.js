@@ -15,6 +15,10 @@ const app=express()
 // load db
 db()
 
+app.get('/',(req,res)=>{
+    res.send("hello welcome to this api ...")
+})
+
 // MIDDLEWARES
 app.use(express.json())
 app.use(bodparser.json())
